@@ -6,17 +6,17 @@ const config: Config = {
   title: "RSVIM",
   tagline: "The VIM editor reinvented in Rust+TypeScript.",
   favicon:
-    "https://raw.githubusercontent.com/rsvim/assets/main/logo/RSVIM-logo-square.png",
+    "https://raw.githubusercontent.com/mivsr/assets/main/logo/RSVIM-logo-square.png",
 
   // Set the production url of your site here
-  url: "https://rsvim.github.io/",
+  url: "https://mivsr.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "rsvim", // Usually your GitHub org/user name.
+  organizationName: "mivsr", // Usually your GitHub org/user name.
   projectName: "rsvim", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -37,7 +37,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/rsvim/rsvim.github.io/tree/main/",
+          editUrl: "https://github.com/mivsr/mivsr.github.io/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -54,15 +54,34 @@ const config: Config = {
   ],
 
   themes: [
-    ["@docusaurus/theme-search-algolia", { id: "1" }],
-    ["@docusaurus/theme-search-algolia", { id: "2" }],
     "@docusaurus/theme-mermaid",
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // Your options:
+
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+
+        // For Docs using Chinese, it is recomended to set:
+        // language: ["en", "zh"],
+        language: ["en"],
+
+        // Customize the keyboard shortcut to focus search bar (default is "mod+k"):
+        // searchBarShortcutKeymap: "s", // Use 'S' key
+        // searchBarShortcutKeymap: "ctrl+shift+f", // Use Ctrl+Shift+F
+
+        // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
+        // forceIgnoreNoIndex: true,
+      }),
+    ]
   ],
 
   themeConfig: {
     // Replace with your project's social card
     image:
-      "https://raw.githubusercontent.com/rsvim/assets/main/logo/RSVIM-logo-square.png",
+      "https://raw.githubusercontent.com/mivsr/assets/main/logo/RSVIM-logo-square.png",
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 6,
@@ -72,35 +91,10 @@ const config: Config = {
         hideable: true,
       },
     },
-    algolia: {
-      appId: "6GZS4A5AM4",
-      apiKey: "43f79b6b63823243472aa2acca6cc9ea",
-      indexName: "rsvimio",
-      contextualSearch: true,
-
-      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-      // externalUrlRegex: "external\\.com|domain\\.com",
-      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-      // replaceSearchResultPathname: {
-      //   from: "/docs/", // or as RegExp: /\/docs\//
-      //   to: "/",
-      // },
-
-      // Optional: Algolia search parameters
-      searchParameters: {},
-
-      // Optional: path for search page that enabled by default (`false` to disable it)
-      searchPagePath: false,
-
-      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
-      insights: false,
-
-      //... other Algolia params
-    },
     navbar: {
       title: "RSVIM",
       logo: {
-        src: "https://raw.githubusercontent.com/rsvim/assets/main/logo/RSVIM-logo-square.png",
+        src: "https://raw.githubusercontent.com/mivsr/assets/main/logo/RSVIM-logo-square.png",
       },
       items: [
         {
@@ -130,7 +124,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/rsvim/rsvim",
+          href: "https://github.com/mivsr/rsvim",
           // label: "GitHub",
           className: "header-github-link",
           position: "right",
@@ -179,7 +173,7 @@ const config: Config = {
             },
             {
               label: "RFC",
-              href: "https://github.com/rsvim/rfc",
+              href: "https://github.com/mivsr/rfc",
             },
           ],
         },
