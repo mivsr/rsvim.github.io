@@ -85,8 +85,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image:
-      "https://raw.githubusercontent.com/mivsr/assets/main/logo/RSVIM-logo-square.png",
+    image: "img/RSVIM-logo-square.png",
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 6,
