@@ -6,7 +6,7 @@ tags: [product]
 
 [Vim](https://www.vim.org/) and [Neovim](https://neovim.io/) editors are so popular and loved by developers and text writers all over the world, including me.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## History
 
