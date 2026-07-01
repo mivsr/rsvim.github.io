@@ -6,7 +6,7 @@ const config: Config = {
   title: "RSVIM",
   tagline: "The VIM editor reinvented in Rust+TypeScript.",
   favicon:
-    "img/RSVIM-logo-square.png",
+    "https://cdn.jsdelivr.net/gh/mivsr/assets@main/logo/RSVIM-logo-square.png",
 
   future: {
     v4: true,
@@ -42,7 +42,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/mivsr/mivsr.github.io/tree/main/",
+          editUrl: "https://github.com/mivsr/rsvim.github.io/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -85,7 +85,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/RSVIM-logo-square.png",
+    image: "https://cdn.jsdelivr.net/gh/mivsr/assets@main/logo/RSVIM-logo-square.png",
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 6,
@@ -98,7 +98,7 @@ const config: Config = {
     navbar: {
       title: "RSVIM",
       logo: {
-        src: "https://raw.githubusercontent.com/mivsr/assets/main/logo/RSVIM-logo-square.png",
+        src: "https://cdn.jsdelivr.net/gh/mivsr/assets@main/logo/RSVIM-logo-square.png",
       },
       items: [
         {
