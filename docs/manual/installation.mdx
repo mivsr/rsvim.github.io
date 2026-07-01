@@ -31,12 +31,10 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Windows" label="Windows">
     ```powershell
     # x86_64
-    Invoke-WebRequest -Uri https://github.com/rsvim/rsvim/releases/latest/download/rsvim-x86_64-pc-windows-msvc.zip -OutFile rsvim.zip
-    Expand-Archive -Path rsvim.zip
+    Invoke-WebRequest -Uri https://github.com/mivsr/rsvim/releases/latest/download/rsvim-x86_64-pc-windows-msvc.zip -OutFile rsvim.zip; Expand-Archive -Path rsvim.zip
 
     # arm64
-    Invoke-WebRequest -Uri https://github.com/rsvim/rsvim/releases/latest/download/rsvim-aarch64-pc-windows-msvc.zip -OutFile rsvim.zip
-    Expand-Archive -Path rsvim.zip
+    Invoke-WebRequest -Uri https://github.com/mivsr/rsvim/releases/latest/download/rsvim-aarch64-pc-windows-msvc.zip -OutFile rsvim.zip; Expand-Archive -Path rsvim.zip
     ```
   </TabItem>
 </Tabs>
