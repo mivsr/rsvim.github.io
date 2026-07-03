@@ -5,7 +5,7 @@
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap");
 
 @font-face {
   font-family: "Noto Sans", sans-serif;
@@ -18,7 +18,7 @@ html {
 }
 
 code {
-  font-family: "Noto Sans Mono";
+  font-family: "Source Code Pro", monospace;
   vertical-align: baseline;
 }
 
@@ -39,6 +39,7 @@ code {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-heading-font-family: "Noto Sans", sans-serif;
   --ifm-font-family-base: "Noto Sans", sans-serif;
+  --ifm-font-family-monospace: "Source Code Pro", monospace;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
