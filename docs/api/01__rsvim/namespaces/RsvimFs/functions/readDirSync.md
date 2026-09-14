@@ -39,7 +39,7 @@ Directory path to read.
 
 [`Iterable`](https://www.typescriptlang.org/docs/handbook/iterators-and-generators.html#iterable-interface)\<[`DirEntry`](../type-aliases/DirEntry.md)\>
 
-Iterator - An iterable of [RsvimFs.DirEntry](../type-aliases/DirEntry.md).
+Iterator.
 
 ## Throws
 

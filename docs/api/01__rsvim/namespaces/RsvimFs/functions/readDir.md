@@ -39,7 +39,7 @@ Directory path to read.
 
 `AsyncIterable`\<[`DirEntry`](../type-aliases/DirEntry.md)\>
 
-Async iterator - An async iterable of [RsvimFs.DirEntry](../type-aliases/DirEntry.md).
+Async iterator.
 
 ## Throws
 
