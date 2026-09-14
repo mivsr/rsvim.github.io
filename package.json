@@ -52,5 +52,11 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "allowScripts": {
+    "@swc/core@1.15.46": true,
+    "core-js@3.42.0": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20260828.1": true
   }
 }
